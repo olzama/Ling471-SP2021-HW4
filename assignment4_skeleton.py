@@ -5,7 +5,6 @@ import pandas as pd
 import string
 import sys
 
-from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
@@ -49,7 +48,7 @@ def main(argv):
     # y_test =
 
     # TODO COMMENT: Look up what the astype() method is doing and add a comment, explaining in your own words,
-    # what the next two lines are doing.
+    # what the next two lines are doing (if they are in fact doing anything useful! ;) That will depend on how you stored the gold labels).
     y_train = y_train.astype('int')
     y_test = y_test.astype('int')
 
